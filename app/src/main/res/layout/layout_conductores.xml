@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Tarea03.layoutPrincipal"
+    android:weightSum="3">
+
+    <TextView
+        style="@style/Tarea03.CajasTxtTitulo"
+        android:layout_weight="0.2"
+        android:text="@string/conductores"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btnConductoresOK"
+                style="@style/Tarea03.btn"
+                android:text="@string/btn_ok" />
+            <Button
+                android:id="@+id/btnConductoresLimpiar"
+                style="@style/Tarea03.btn"
+                android:text="@string/btnClear" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutConductoresTxtView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/editNombre"
+                style="@style/Tarea03.CajasTxt"
+                android:inputType="textPersonName"
+                android:hint="@string/txtNombre"/>
+            <EditText
+                android:id="@+id/editTxtDir"
+                style="@style/Tarea03.CajasTxt"
+                android:inputType="textPostalAddress"
+                android:hint="@string/txtDireccion"/>
+            <EditText
+                android:id="@+id/editTxtDir2"
+                style="@style/Tarea03.CajasTxt"
+                android:inputType="textPostalAddress"
+                android:hint="@string/txtDireccion2"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/editTxtDni"
+                style="@style/Tarea03.CajasTxt"
+                android:inputType="text"
+                android:hint="@string/txtDNI" />
+            <EditText
+                android:id="@+id/editTxtMail"
+                style="@style/Tarea03.CajasTxt"
+                android:inputType="textEmailAddress"
+                android:hint="@string/txtMail" />
+            <EditText
+                android:id="@+id/editTxtTlfn"
+                style="@style/Tarea03.CajasTxt"
+                android:inputType="phone"
+                android:hint="@string/txtTelefono" />
+            <EditText
+                android:id="@+id/txtPosicion"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/reciclerViewConductores"
+        android:background="@color/colorLytGround">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

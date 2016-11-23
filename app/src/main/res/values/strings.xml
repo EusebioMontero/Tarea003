@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tarea03</string>
+    <string name="titulo_act_01">CONDUCTORES-COCHES</string>
+    <string name="coches">GESTION DE COCHES</string>
+    <string name="conductores">GESTION DE CONDUCTORES</string>
+    <string name="btn_ok">OK</string>
+    <string name="txtColor">Color</string>
+    <string name="txtAsientos">Asientos</string>
+    <string name="btnClear">Limpiar</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtDireccion">Dirección</string>
+    <string name="txtDireccion2">Dirección 2</string>
+    <string name="txtDNI">D.N.I.</string>
+    <string name="txtMail">Email</string>
+    <string name="txtTelefono">Teléfono</string>
+    <string name="txtModelo">Modelo</string>
+    <string name="desc_img_coche">Imagen del coche</string>
+    <string name="desc_img_conductor">Imagen del conductor</string>
+    <string name="txtCochesAsignados">Coches Asignados</string>
+
+</resources>

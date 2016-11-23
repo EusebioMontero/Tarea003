@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Tarea03.layoutPrincipal"
+    android:weightSum="3"
+    android:id="@+id/layoutCochesContenedor">
+    <TextView
+        style="@style/Tarea03.CajasTxtTitulo"
+        android:layout_weight="0.2"
+        android:text="@string/coches" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btnCochesOK"
+                style="@style/Tarea03.btn"
+                android:text="@string/btn_ok" />
+            <Button
+                android:id="@+id/btnCochesLimpiar"
+                style="@style/Tarea03.btn"
+                android:text="@string/btnClear" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <EditText
+                android:id="@+id/editTxtModelo"
+                style="@style/Tarea03.CajasTxt"
+                android:hint="@string/txtModelo" />
+            <EditText
+                android:id="@+id/editTxtColor"
+                style="@style/Tarea03.CajasTxt"
+                android:hint="@string/txtColor" />
+            <EditText
+                android:id="@+id/editTxtAsientos"
+                style="@style/Tarea03.CajasTxt"
+                android:inputType="number"
+                android:hint="@string/txtAsientos" />
+            <EditText
+                android:id="@+id/editTxtPosicion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/reciclerViewCoches"
+        android:background="@color/colorLytGround">
+    </android.support.v7.widget.RecyclerView>
+
+<!--    <FrameLayout
+        android:layout_weight="2"
+        android:id="@+id/fragmentContenedorCoches"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </FrameLayout>-->
+</LinearLayout>

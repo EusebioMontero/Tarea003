@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/Tarea03.layoutPrincipal"
+    tools:context="com.emc.tarea03.ActivityInicio">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="@string/titulo_act_01"
+            style="@style/Tarea03.CajasTxtTitulo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:text="@string/coches"
+                android:id="@+id/btnCoches"
+                style="@style/Tarea03.btn"/>
+            <Button
+                android:text="@string/conductores"
+                android:id="@+id/btnConductores"
+                style="@style/Tarea03.btn"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

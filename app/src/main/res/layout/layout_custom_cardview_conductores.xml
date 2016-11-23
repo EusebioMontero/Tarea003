@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewConductores"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="#e0ddec"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center">
+        <ImageView
+            android:src="@mipmap/ic_conductor"
+            android:contentDescription="@string/desc_img_conductor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:weightSum="6">
+            <LinearLayout
+                android:id="@+id/lytDatos"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <TextView
+                    android:id="@+id/txtNombre"
+                    android:text="@string/txtNombre"
+                    style="@style/Tarea03.CajasTxt.CardView"/>
+                <TextView
+                    android:id="@+id/txtDireccion"
+                    android:text="@string/txtDireccion"
+                    style="@style/Tarea03.CajasTxt.CardView" />
+                <TextView
+                    android:id="@+id/txtDNI"
+                    android:text="@string/txtDNI"
+                    style="@style/Tarea03.CajasTxt.CardView" />
+                <TextView
+                    android:id="@+id/txtMail"
+                    android:text="@string/txtMail"
+                    style="@style/Tarea03.CajasTxt.CardView" />
+                <TextView
+                    android:id="@+id/txtTelefono"
+                    android:text="@string/txtTelefono"
+                    style="@style/Tarea03.CajasTxt.CardView" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lytCochesAsignados"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/txtCochesAsignados"
+                    android:text="@string/txtCochesAsignados"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    style="@style/Tarea03.CajasTxt.CardView" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.11"
+                    card_view:srcCompat="@android:drawable/ic_menu_send"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
